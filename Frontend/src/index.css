@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#productCard{
+    transition: ease all 500ms;
+    cursor: pointer;
+}
+#productCard:hover{
+    scale: 1.02;
+    /* box-shadow: 9px 9px  10px grey; */
+    rotate: -1deg;
+}
+
+#totalProducts{
+    background-color: goldenrod;
+    height: 60px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#addProduct{
+    width: auto;
+    height: 60px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(87, 87, 87);
+    color: goldenrod;
+    border: none;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+
+#addProduct:hover{
+    scale:1.02;
+}
+
+.men{
+    background-color: rgb(163, 202, 217);
+    color: black;
+}
+.men:hover{
+    box-shadow: 9px 9px  10px rgb(163, 202, 217);
+}
+.women{
+    background-color: rgb(241, 200, 207);
+    color: black;
+}
+.women:hover{
+    box-shadow: 9px 9px  10px rgb(241, 200, 207);
+}
+.children{
+    background-color: rgb(164, 248, 192);
+    color: black;
+}
+.children:hover{
+    box-shadow: 9px 9px  10px rgb(164, 248, 192);
+}
+.electronics{
+    color: black;
+    background-color: rgb(186, 186, 186);
+}
+.electronics:hover{
+    box-shadow: 9px 9px  10px rgb(186, 186, 186);
+}
+.store{
+    color: black;
+    background-color: rgb(240, 202, 107);
+}
+.store:hover{
+    box-shadow: 9px 9px  10px rgb(240, 202, 107);
+}
+
+#signinButton{
+    
+    color: black;
+}
+#mafLogin{
+    scale: 0.7;
+}
+
+#loginButton{
+    border-color: white;
+    color: goldenrod;
+    border: 2px goldenrod solid;
+    transition: all ease 500ms;
+}
+#loginButton:hover{
+    background-color: goldenrod;
+    color: white;
+    border-color: white;
+}
+#logingButton{
+    background-color: green;
+}
+
+/* PDP */
+#pdp{
+    /* background-color: rgb(158, 93, 93); */
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+#pdpRow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+    height: 80%;
+}
+
+#pdpImg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 35%;
+    scale: 1.2;
+}
+#pdpImg img{
+    height: 80%;
+    border-radius: 15%;
+}
+
+#pdpDesc{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    height: 100%;
+    border-radius: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 40px;
+    background-color: aliceblue;
+    position: relative;
+    padding-left: 60px;
+    
+    /* padding: 10px; */
+}
+#pdpName{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#pdpId{
+    font-size: 22px;
+    margin-top: -10px;
+    /* margin-bottom: 25px; */
+    margin-left: 3px;
+    color: gray;
+}
+#pdpDes{
+    font-size: 32px;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    color: rgb(96, 96, 201);
+}
+#pdpPrice{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    color: rgb(20, 156, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pdpAdd{
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    scale: 1.4;
+    background-color: goldenrod;
+    border: none;
+    transition: all 0.8s ease;
+}
+#pdpCart{
+    /* scale: 1.4; */
+    /* background-color: goldenrod; */
+    border: none;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+}
+#pdpCart div{
+    margin-bottom: 2px;
+}
+#pdpAdded{
+    position: absolute;
+    right: 30%;
+    top: 60%;
+    scale: 1.4;
+    padding-left: 18px;
+    background-color: rgb(45, 188, 45);
+    border: none;
+    transition: all 0.8s ease;
+}
+.hide{
+    display: none;
+}
+#pdpIcon {
+    transition: all 0.8s ease; /* Add a transition for smooth animation */
+    margin-left: 10px;
+    /* transform-origin: center; */
+}
+/* #pdpIcon::selection{
+    background-color: black;
+} */
+#pdpCart:hover #pdpIcon {
+    transform: rotate(360deg); /* Rotate the icon by 360 degrees on hover */
+}
+#pdpAdd:hover{
+    /* border: 2px solid white; */
+    /* border-radius: 5%; */
+    scale: 1.45;
+}
+#pdpAdd:hover #pdpIcon {
+    transform: rotate(360deg); /* Rotate the icon by 360 degrees on hover */
+}
+#profileDiv{
+    background-color: white;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#profileCard{
+    /* position: absolute; */
+    margin-top: -4%;
+    scale: 1.2;
+    margin-top: -10%;
+}
+#profileCard img{
+    margin-top: -40px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: dotted grey 8px;
+    transition: all ease 1.5s;
+}
+#profileCard img:hover{
+    transform:  rotateY(180deg);
+}
+#profileDetail{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: -30px;
+}
+#profileEdit{
+    position: absolute;
+    top: 105%;
+    right: 38%;
+    background-color: goldenrod;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edit{
+    margin-top: 2px;
+}
+#signupChange button{
+    margin-top: 10px;
+    color: goldenrod;
+    border-color: goldenrod;
+    transition: all ease 0.5s;
+    border-width: 2px;
+}
+#signupChange button:hover{
+    background-color: goldenrod;
+    color: white ;
+}

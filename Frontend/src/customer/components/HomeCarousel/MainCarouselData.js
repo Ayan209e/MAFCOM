@@ -1,0 +1,20 @@
+export const mainCarouselData=[
+    {
+        image:"/Assests/Car1.jpg"
+    },
+    {
+        image:"/Assests/Car2.jpg"
+    },
+    {
+        image:"/Assests/Car3.jpg"
+    },
+    {
+        image:"/Assests/Car4.jpg"
+    },
+    {
+        image:"/Assests/Car5.jpg"
+    },
+    {
+        image:"/Assests/Car6.jpg"
+    }
+]
